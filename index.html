@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="arrow">
+        <svg
+          class="left-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            fill="#796d9c"
+            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+          />
+        </svg>
+        <h5>Back to lists</h5>
+      </div>
+      <div class="today">
+        <h1>TODAY</h1>
+        <div class="pluswrapper">
+          <button id="plus" class="plus">+</button>
+          <p class="info hidden">do you want to add more to your todo list?</p>
+        </div>
+      </div>
+      <div>
+        <button class="glass"></button>
+        <h4>33% complete</h4>
+      </div>
+      <div class="wrapper">
+        <div class="wrapper-flex">
+          <button class="filled">
+            <svg
+              class="correct"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="#f2f2f3"
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+              />
+            </svg>
+          </button>
+
+          <p>Meditation</p>
+        </div>
+        <div class="wrapper-flex">
+          <button class="empty"></button>
+          <p>Pick up Anna</p>
+        </div>
+        <div class="wrapper-flex">
+          <button class="empty"></button>
+          <p>Set up meeting with jay</p>
+        </div>
+        <div class="wrapper-flex">
+          <button class="empty"></button>
+          <p>Finish Daily Ui</p>
+        </div>
+        <div class="wrapper-flex">
+          <button class="empty"></button>
+          <p>Second edits on article</p>
+        </div>
+        <div class="wrapper-flex">
+          <button class="filled">
+            <svg
+              class="correct"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="#f2f2f3"
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+              />
+            </svg>
+          </button>
+          <p>Email Chris</p>
+        </div>
+      </div>
+      <div class="text-wrapper">
+        <p class="text">Pull from recurring lists</p>
+      </div>
+      <div class="grid">
+        <button class="yellow">Daily</button>
+        <button class="green">Weekly</button>
+        <button class="red">Monthly</button>
+        <button class="purple">Occasional</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="controls.js"></script>
+    <plus-component
+      title="magic"
+      body="do you want to add more to your todo list?"
+    ></plus-component>
+  </body>
+</html>
